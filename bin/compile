@@ -42,13 +42,13 @@ function vendor() {
 }
 
 echo "-----> Vendoring binaries"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/cairo-1.14.6-1.tar.gz"  "$BUILD_DIR/vendor/cairo"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/freetype-2.6.5-1.tar.gz" "$BUILD_DIR/vendor/freetype"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/giflib-4.2.3-3.tar.gz"   "$BUILD_DIR/vendor/giflib"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/pixman-0.34.0-1.tar.gz"  "$BUILD_DIR/vendor/pixman"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/pango-1.40.1-1.tar.gz"  "$BUILD_DIR/vendor/pango"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/harfbuzz-1.3.0-1.tar.gz"  "$BUILD_DIR/vendor/harfbuzz"
-vendor "https://s3.amazonaws.com/mojodna-heroku/$STACK/fontconfig-2.12.1-1.tar.gz"  "$BUILD_DIR/vendor/fontconfig"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/cairo-1.14.6-1.tar.gz"  "$BUILD_DIR/vendor/cairo"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/freetype-2.6.5-1.tar.gz" "$BUILD_DIR/vendor/freetype"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/giflib-4.2.3-3.tar.gz"   "$BUILD_DIR/vendor/giflib"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/pixman-0.34.0-1.tar.gz"  "$BUILD_DIR/vendor/pixman"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/pango-1.40.1-1.tar.gz"  "$BUILD_DIR/vendor/pango"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/harfbuzz-1.3.0-1.tar.gz"  "$BUILD_DIR/vendor/harfbuzz"
+vendor "https://s3.amazonaws.com/op1c-heroku-cairo-buildpack/$STACK/fontconfig-2.12.1-1.tar.gz"  "$BUILD_DIR/vendor/fontconfig"
 
 echo "-----> Tweaking Cairo, FreeType, and Pixman include paths"
 
